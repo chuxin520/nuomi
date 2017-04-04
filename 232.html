@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var arr = [3, 4, 1, 2, 5, 6, 6, 5, 4, 3, 3];
+        var arr1= [];
+        var sum = 0;
+        /*复制数组*/
+
+        /*方式一*/
+        /*for (var i = 0; i < arr.length; i++) {
+            arr1.push(arr[i]);
+        }*/
+
+        /*方式二*/
+       //arr1=arr.slice(0);
+
+        /*方式三*/
+        arr1=arr.concat();
+
+        alert(arr1);
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = (i+1); j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    arr1[i]=arr1[j]=0;
+                    alert(arr1)
+                }
+            }
+            sum+=arr1[i];
+        }
+        alert(sum);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

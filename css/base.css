@@ -1,0 +1,341 @@
+/*重置样式*/
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td
+{margin: 0; padding: 0; border: 0; outline: none;}
+h1, h2, h3, h4, h5, h6{font-size: 100%;padding: .6em 0;margin: 0 15px;}
+ul, ol{list-style: none;}
+a{color: black;text-decoration: none;}
+span{font-family:'FontAwesome';transition: all 0.3s;}
+.clearfix:after{content: '';height: 0; display: block;clear: both; visibility: hidden}
+/*公共样式*/
+/*顶部区域样式*/
+.top{
+    height: 36px;
+    background-color:#fafafa ;
+    border-top:1px #dfdfdf solid;
+    border-bottom:1px #dfdfdf solid;
+    line-height: 36px;
+    font-size: 13px;
+    font-family: "Arial","宋体";
+    color: #8c8c8c;
+}
+.top a{
+    color: #8c8c8c;;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.top a:nth-last-child{
+    padding-right: 0;
+}
+.top .current_city{
+    display:inline-block;
+    padding-left: 1px;
+    padding-right: 10px;
+}
+a:hover{color: #73adc9}
+.main{
+    margin: 0 auto;
+    position: relative;
+}
+.inner{
+    width: 1210px;
+    margin: 0 auto;
+    position: relative;
+}
+.top .city{
+    float: left;
+    position: relative;
+}
+.line{
+    display: inline-block;
+    position: absolute;
+    background-color:#dfdfdf;
+    right: -2px;
+    top: 12px;
+    width: 1px;
+    height: 12px;
+}
+.select_city{
+    border-left: 1px transparent solid;
+    border-right: 1px transparent solid;
+}
+.top_nav>li:nth-child(3),.top_nav>li:nth-child(5),.top_nav>li:nth-child(6),.top_nav>li:nth-child(7),.top_nav>li:nth-child(9){
+    border-left: 1px transparent solid;
+    border-right: 1px transparent solid;
+}
+.city-drop-down{
+    position: absolute;
+    left: -1px;
+    width: 201px;
+    border: 1px #dfdfdf solid;
+    border-top: none;
+    line-height: 23px;
+}
+.top_nav>li:nth-child(3):hover,.top_nav>li:nth-child(5):hover,.top_nav>li:nth-child(6):hover,.top_nav>li:nth-child(7):hover,.top_nav>li:nth-child(9):hover,.select_city:hover{
+    height: 37px;
+    background-color: white;
+    border-left:1px #dfdfdf solid;
+    border-right:1px #dfdfdf solid;
+}
+.top_nav>li:nth-child(3):hover .line,.top_nav>li:nth-child(5):hover .line,.top_nav>li:nth-child(6):hover .line,.top_nav>li:nth-child(7):hover .line,.top_nav>li:nth-child(9):hover .line{
+    display: none;
+}
+.icon-angle-down{
+    font-size: 15px;
+}
+.top li:hover  .icon-angle-down{
+    display: inline-block;
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); 	/* IE 9 */
+    -moz-transform:rotate(180deg); 	/* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg); 	/* Opera */
+}
+.top li div{
+    position: absolute;
+    top: 37px;
+    border: 1px #dfdfdf solid;
+    border-top: none;
+    display: none;
+    z-index: 100;
+}
+.top li:hover div{
+    display: block;
+    background-color: white;
+}
+.city-drop-down .morelink{
+    display: inline-block;
+    float: right;
+}
+.top_nav{
+    float: right;
+}
+.top_nav>li{
+    position: relative;
+}
+.top li{
+    position: relative;
+    float: left;
+}
+.qr-drop-down{
+    left: -1px;
+    padding: 16px 18px 8px;
+}
+.qr-drop-down img{
+    width: 95px;
+}
+.myBusiness,.myNuomi{
+    left: -1px;
+    width: 100%;
+}
+.myNuomi>ul>li:hover,.myBusiness>ul>li:hover{
+    width: 100%;
+    background-color: #fafafa;
+}
+.myNuomi a,.myBusiness a{
+    color: #73adc9;
+}
+.history{
+    right: -1px;
+    width: 308px;
+    height: 83px;
+    line-height: 83px;
+    text-align: center;
+}
+.webChat-drop-down{
+    padding: 17px 0;
+    width: 165px;
+    right: -1px;
+    text-align: center;
+    color: black;
+    line-height: 17px;
+}
+.webChat-drop-down span{
+    color: #ff4883;
+}
+
+.webChat-drop-down img{
+    width: 100px;
+}
+
+/*头部区域样式*/
+header{
+    width: 1210px;
+    height: 60px;
+    margin: 30px auto 0;
+}
+.logo{
+    display: block;
+    width: 226px;
+    height:40px;
+    float: left;
+}
+.logo img {
+    display: block;
+}
+header ul{
+    float: right;
+}
+header ul li{
+    float: left;
+}
+.search_input{
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    border: 1px solid #dfdfdf;
+    border-right: 0;
+    width: 407px;
+    padding: 10px 16px 10px 20px;
+    float: left;
+    color: #333;
+    vertical-align:top;
+}
+.search{
+    width: 40px;
+    height: 38px;
+    background-color: white;
+}
+
+.input-bar{
+    position: relative;
+}
+.input-bar .icon-search{
+    display: block;
+    position: absolute;
+    right: 11px;
+    top: 8px;
+    font-size: 22px;
+}
+.input-bar>ul{
+    position: absolute;
+    right: 49px;
+    top: 11px;
+    font-size: 14px;
+}
+.input-bar>ul>li{
+    background-color: #f0f0f0;
+    margin-left: 5px;
+    max-width: 50px;
+    padding: 0 4px;
+}
+.search-btn{
+    display: inline-block;
+    height: 38px;
+    width: 40px;
+    border: 1px #dfdfdf solid;
+}
+.search-btn:hover{
+    color: white;
+}
+.search-btn:hover .search{
+    background-color:#ff318c ;
+    border: 1px #ff318c solid;
+}
+.insurance{
+    color:#ebca4d ;
+    line-height: 38px;
+    height: 38px;
+    background-color: #feda4e;
+    padding: 0 5px 0 15px;
+    border: 1px #ebca4d solid;
+    margin-left: 12px;
+}
+.insurance a{
+    font-weight: bold;
+    display: inline-block;
+    color: #404146;
+    padding-right: 10px;
+    position: relative;
+}
+.outline{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border:1px #404146 solid;
+    border-radius: 50%;
+    position: absolute;
+    left: -3px;
+    top: 7px;
+}
+.yen{
+    left: -6px;
+    top: 7px;
+}
+.insurance_content{
+    position: absolute;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 12px;
+    border: 1px #dfdfdf solid ;
+    background-color: white;
+    top: 45px;
+    font-weight: normal;
+    font-size: 14px;
+    display: none;
+}
+.retreat{
+    width: 115px;
+    left: -16px;
+}
+.retreat img{
+    display: block;
+    position: absolute;
+    top:-5px;
+    left: 18px;
+}
+.compensate{
+    width: 145px;
+    left: -78px;
+}
+.compensate img{
+    display: block;
+    position: absolute;
+    top:-5px;
+    left: 80px;
+}
+.overdue{
+    width: 78px;
+    left: -78px;
+}
+.overdue img{
+    display: block;
+    position: absolute;
+    top:-5px;
+    left: 77px;
+}
+.insurance>a:hover p{
+    z-index: 100;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

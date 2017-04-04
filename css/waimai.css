@@ -1,0 +1,238 @@
+/*重置样式*/
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td
+{margin: 0; padding: 0; border: 0; outline: none;}
+h1, h2, h3, h4, h5, h6{font-size: 100%;padding: .6em 0;margin: 0 15px;}
+ul, ol{list-style: none;}
+a{color: black;text-decoration: none;}
+span{font-family:'FontAwesome';transition: all 0.3s;}
+.clearfix:after{content: '';height: 0; display: block;clear: both; visibility: hidden}
+body{
+    font-family:Helvetica,宋体,Arial,sans-serif;
+    background-color: #fafafa;
+}
+header{
+    background: #ff2d4b;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+}
+.inner{
+    width: 1210px;
+    margin: 0 auto;
+}
+header ul{
+    float: right;
+}
+header li{
+    float: left;
+    margin: 7px 15px 0;
+}
+header a{
+    color: white;
+}
+.banner{
+    height: 430px;
+    text-align: center;
+    background:url("../images/yunying.png") no-repeat top center;
+    background-size: cover;
+}
+.banner-logo{
+    padding-top: 125px;
+}
+.search-bar{
+    width: 766px;
+    margin: 60px auto 0;
+    font-size: 20px;
+    position: relative;
+}
+.city{
+    background-color: white;
+    display: inline-block;
+    height: 55px;
+    line-height: 55px;
+    width: 120px;
+    vertical-align: top;
+}
+.city .icon-angle-down{
+    color: #aaaaaa;
+}
+.city-detail{
+    position: absolute;
+    width: 766px;
+    height: 350px;
+    top: 65px;
+    background-color: white;
+    overflow-y: scroll;
+    display: none;
+}
+.cities-header{
+    float: left;
+    width: 120px;
+    line-height: 200px;
+}
+.cities-group{
+    border-bottom: 1px #e3e3e3 solid;
+}
+.cities-group ul{
+    float: left;
+    padding: 10px 0;
+    width: 549px;
+}
+.cities-group li{
+    float: left;
+}
+.cities-group:hover{
+    background-color:#f6f6f6;
+}
+.cities-group:hover .cities-header{
+    color:deeppink;
+}
+.cities-group li a {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 20px;
+    color: #444;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cities-group li:hover a{
+    color:deeppink;
+}
+.search-bar input{
+    height: 55px;
+    width: 500px;
+    font-size: 20px;
+}
+.search-bar .input{
+    padding-left: 15px;
+}
+.search-bar .button{
+    height: 55px;
+    line-height: 55px;
+    width: 125px;
+}
+.main{
+    padding-top: 108px;
+}
+.video{
+    margin-left: 175px;
+    margin-right: 90px;
+    float: left;
+    height: 320px;
+    width: 500px;
+}
+.video embed {
+    height: 320px;
+    width: 500px;
+}
+.download{
+    float: left;
+    margin-top: 27px;
+    min-width: 400px;
+}
+.download p:first-child {
+    font-size: 30px;
+    font-weight: 400;
+}
+.download p:nth-child(2) {
+    font-size: 43px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #333;
+}
+.download-link{
+    margin-top: 50px;
+    position: relative;
+}
+.download-link a{
+    display: block;
+    width: 127px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ff2d4b;
+    text-align: center;
+    color: white;
+    margin-bottom: 24px;
+}
+.download-qr{
+   position: absolute;
+    top: 0px;;
+    right: 136px;
+}
+.download-link a:hover{
+    background-color: #dc1432;
+}
+footer{
+    margin-top: 140px;
+}
+footer>div{
+    float: left;
+    color: #a59999;
+    width: 260px;
+    height: 115px;
+    padding-left: 41px ;
+    border-right: 1px #eeeeee solid;
+}
+footer>div:nth-child(4){
+    border-right:none
+}
+footer a{
+    color: #a59999;
+}
+
+.bottom{
+    margin-top: 15px;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 12px;
+    height: 60px;
+    border-top: 1px #eeeeee solid;
+    color: #a59999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

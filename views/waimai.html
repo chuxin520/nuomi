@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度外卖</title>
+    <link rel="stylesheet" href="../css/waimai.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <script src="../lib/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            var flag=false;
+            $(".city").on("click", function (e) {
+                stopBubble(e);
+                $(".city-detail").css({display:"block"});
+                flag=true;
+            });
+            $(".city-detail").find("li").on("click", function (e) {
+                stopBubble(e);
+                var city = $(this).find("a").attr("title");
+                $(".city-detail").css({display:"none"});
+                $(".currentCity").html(city);
+                flag=false;
+            });
+            $(".city-detail").on("click", function (e) {
+                stopBubble(e);
+            });
+            $("body").on("click", function () {
+                if(flag){
+                    $(".city-detail").css({display:"none"});
+                    flag=false;
+                }
+            });
+        });
+        /*阻止事件冒泡*/
+        function stopBubble(e){
+            if(e&&e.stopPropagation){//非IE
+                e.stopPropagation();
+            }
+            else{//IE
+                window.event.cancelBubble=true;
+            }
+        }
+    </script>
+</head>
+<body>
+<header class="clearfix">
+    <div class="inner">
+        <img src="../images/waimai_logo_03.jpg" alt="">
+        <ul>
+            <li><a href="#">登陆</a></li>
+            <li><a href="#">注册</a></li>
+        </ul>
+    </div>
+</header>
+<div class="banner clearfix">
+    <div class="banner-logo">
+        <img src="../images/slogon.png" alt="">
+    </div>
+    <div class="search-bar">
+            <span class="city">
+                <span class="currentCity">北京</span>
+                <span class="icon-angle-down"></span>
+            </span>
+        <div class="city-detail">
+            <div class="cities-group clearfix">
+                <div class="cities-header"> ABCDE</div>
+                <ul>
+                    <li><a title="鞍山"> 鞍山 </a></li>
+                    <li><a title="保定"> 保定 </a></li>
+                    <li><a title="包头"> 包头 </a></li>
+                    <li><a title="北京"> 北京 </a></li>
+                    <li><a title="本溪市"> 本溪市 </a></li>
+                    <li><a title="滨州市"> 滨州市 </a></li>
+                    <li><a title="亳州市"> 亳州市 </a></li>
+                    <li><a title="沧州市"> 沧州市 </a></li>
+                    <li><a title="长春"> 长春 </a></li>
+                    <li><a title="长沙"> 长沙 </a></li>
+                    <li><a title="常州"> 常州 </a></li>
+                    <li><a title="巢湖市"> 巢湖市 </a></li>
+                    <li><a title="朝阳市"> 朝阳市 </a></li>
+                    <li><a title="承德市"> 承德市 </a></li>
+                    <li><a title="成都"> 成都 </a></li>
+                    <li><a title="郴州市"> 郴州市 </a></li>
+                    <li><a title="赤峰"> 赤峰 </a></li>
+                    <li><a title="重庆"> 重庆 </a></li>
+                    <li><a title="楚雄彝族自治州"> 楚雄彝族自治州 </a></li>
+                    <li><a title="大连"> 大连 </a></li>
+                    <li><a title="大理"> 大理 </a></li>
+                    <li><a title="丹东"> 丹东 </a></li>
+                    <li><a title="大庆"> 大庆 </a></li>
+                    <li><a title="大同"> 大同 </a></li>
+                    <li><a title="德阳"> 德阳 </a></li>
+                    <li><a title="德州市"> 德州市 </a></li>
+                    <li><a title="东莞"> 东莞 </a></li>
+                    <li><a title="东沙群岛"> 东沙群岛 </a></li>
+                    <li><a title="鄂尔多斯"> 鄂尔多斯 </a></li>
+                </ul>
+            </div>
+            <div class="cities-group clearfix">
+                <div class="cities-header"> FGHIJ</div>
+                <ul>
+                    <li><a title="肥东县"> 肥东县 </a></li>
+                    <li><a title="佛山"> 佛山 </a></li>
+                    <li><a title="抚顺市"> 抚顺市 </a></li>
+                    <li><a title="阜新"> 阜新 </a></li>
+                    <li><a title="阜阳市"> 阜阳市 </a></li>
+                    <li><a title="福州"> 福州 </a></li>
+                    <li><a title="赣州市"> 赣州市 </a></li>
+                    <li><a title="广州"> 广州 </a></li>
+                    <li><a title="贵阳"> 贵阳 </a></li>
+                    <li><a title="哈尔滨"> 哈尔滨 </a></li>
+                    <li><a title="海口"> 海口 </a></li>
+                    <li><a title="邯郸"> 邯郸 </a></li>
+                    <li><a title="杭州"> 杭州 </a></li>
+                    <li><a title="合肥"> 合肥 </a></li>
+                    <li><a title="衡水市"> 衡水市 </a></li>
+                    <li><a title="菏泽市"> 菏泽市 </a></li>
+                    <li><a title="黄冈"> 黄冈 </a></li>
+                    <li><a title="黄石"> 黄石 </a></li>
+                    <li><a title="呼和浩特"> 呼和浩特 </a></li>
+                    <li><a title="惠州市"> 惠州市 </a></li>
+                    <li><a title="葫芦岛市"> 葫芦岛市 </a></li>
+                    <li><a title="吉安市"> 吉安市 </a></li>
+                    <li><a title="嘉兴市"> 嘉兴市 </a></li>
+                    <li><a title="吉林"> 吉林 </a></li>
+                    <li><a title="济南"> 济南 </a></li>
+                    <li><a title="荆州"> 荆州 </a></li>
+                    <li><a title="金华"> 金华 </a></li>
+                    <li><a title="济宁"> 济宁 </a></li>
+                    <li><a title="晋中"> 晋中 </a></li>
+                    <li><a title="锦州"> 锦州 </a></li>
+                    <li><a title="九江市"> 九江市 </a></li>
+                </ul>
+            </div>
+            <div class="cities-group clearfix">
+                <div class="cities-header"> KLMNO</div>
+                <ul>
+                    <li><a title="开封市"> 开封市 </a></li>
+                    <li><a title="昆明"> 昆明 </a></li>
+                    <li><a title="莱芜"> 莱芜 </a></li>
+                    <li><a title="廊坊市"> 廊坊市 </a></li>
+                    <li><a title="兰州"> 兰州 </a></li>
+                    <li><a title="聊城"> 聊城 </a></li>
+                    <li><a title="辽阳"> 辽阳 </a></li>
+                    <li><a title="辽源市"> 辽源市 </a></li>
+                    <li><a title="临汾"> 临汾 </a></li>
+                    <li><a title="临沂"> 临沂 </a></li>
+                    <li><a title="龙岩"> 龙岩 </a></li>
+                    <li><a title="娄底市"> 娄底市 </a></li>
+                    <li><a title="洛阳"> 洛阳 </a></li>
+                    <li><a title="吕梁市"> 吕梁市 </a></li>
+                    <li><a title="马鞍山市"> 马鞍山市 </a></li>
+                    <li><a title="绵阳"> 绵阳 </a></li>
+                    <li><a title="南昌"> 南昌 </a></li>
+                    <li><a title="南京"> 南京 </a></li>
+                    <li><a title="南宁"> 南宁 </a></li>
+                    <li><a title="南通"> 南通 </a></li>
+                    <li><a title="南阳"> 南阳 </a></li>
+                    <li><a title="南平市"> 南平市 </a></li>
+                    <li><a title="宁波"> 宁波 </a></li>
+                    <li><a title="宁德"> 宁德 </a></li>
+                </ul>
+            </div>
+            <div class="cities-group clearfix">
+                <div class="cities-header"> PQRST</div>
+                <ul>
+                    <li><a title="盘锦市"> 盘锦市 </a></li>
+                    <li><a title="莆田市"> 莆田市 </a></li>
+                    <li><a title="青岛"> 青岛 </a></li>
+                    <li><a title="秦皇岛"> 秦皇岛 </a></li>
+                    <li><a title="琼海市"> 琼海市 </a></li>
+                    <li><a title="齐齐哈尔"> 齐齐哈尔 </a></li>
+                    <li><a title="泉州"> 泉州 </a></li>
+                    <li><a title="衢州"> 衢州 </a></li>
+                    <li><a title="日照"> 日照 </a></li>
+                    <li><a title="三明市"> 三明市 </a></li>
+                    <li><a title="三亚"> 三亚 </a></li>
+                    <li><a title="上海"> 上海 </a></li>
+                    <li><a title="商丘"> 商丘 </a></li>
+                    <li><a title="上饶"> 上饶 </a></li>
+                    <li><a title="汕头市"> 汕头市 </a></li>
+                    <li><a title="绍兴"> 绍兴 </a></li>
+                    <li><a title="沈阳"> 沈阳 </a></li>
+                    <li><a title="深圳"> 深圳 </a></li>
+                    <li><a title="石家庄"> 石家庄 </a></li>
+                    <li><a title="朔州市"> 朔州市 </a></li>
+                    <li><a title="四平市"> 四平市 </a></li>
+                    <li><a title="苏州"> 苏州 </a></li>
+                    <li><a title="泰安"> 泰安 </a></li>
+                    <li><a title="太原"> 太原 </a></li>
+                    <li><a title="台州"> 台州 </a></li>
+                    <li><a title="泰州市"> 泰州市 </a></li>
+                    <li><a title="唐山"> 唐山 </a></li>
+                    <li><a title="天津"> 天津 </a></li>
+                    <li><a title="铜川市"> 铜川市 </a></li>
+                    <li><a title="通化市"> 通化市 </a></li>
+                    <li><a title="通辽"> 通辽 </a></li>
+                    <li><a title="铜陵市"> 铜陵市 </a></li>
+                </ul>
+            </div>
+            <div class="cities-group clearfix">
+                <div class="cities-header"> UVWXYZ</div>
+                <ul>
+                    <li><a data-cityid="287"
+                           title="潍坊"> 潍坊 </a></li>
+                    <li><a data-cityid="175"
+                           title="威海"> 威海 </a></li>
+                    <li><a data-cityid="178"
+                           title="温州"> 温州 </a></li>
+                    <li><a data-cityid="218"
+                           title="武汉"> 武汉 </a></li>
+                    <li><a data-cityid="129"
+                           title="芜湖"> 芜湖 </a></li>
+                    <li><a data-cityid="168"
+                           title="乌兰察布"> 乌兰察布 </a></li>
+                    <li><a data-cityid="317"
+                           title="无锡"> 无锡 </a></li>
+                    <li><a data-cityid="194"
+                           title="厦门"> 厦门 </a></li>
+                    <li><a data-cityid="233"
+                           title="西安"> 西安 </a></li>
+                    <li><a data-cityid="156"
+                           title="襄阳"> 襄阳 </a></li>
+                    <li><a data-cityid="323"
+                           title="咸阳"> 咸阳 </a></li>
+                    <li><a data-cityid="266"
+                           title="邢台市"> 邢台市 </a></li>
+                    <li><a data-cityid="190"
+                           title="宣城市"> 宣城市 </a></li>
+                    <li><a data-cityid="155"
+                           title="许昌市"> 许昌市 </a></li>
+                    <li><a data-cityid="316"
+                           title="徐州"> 徐州 </a></li>
+                    <li><a data-cityid="54"
+                           title="延边朝鲜族自治州"> 延边朝鲜族自治州 </a></li>
+                    <li><a data-cityid="223"
+                           title="盐城"> 盐城 </a></li>
+                    <li><a data-cityid="346"
+                           title="扬州市"> 扬州市 </a></li>
+                    <li><a data-cityid="326"
+                           title="烟台"> 烟台 </a></li>
+                    <li><a data-cityid="270"
+                           title="宜昌"> 宜昌 </a></li>
+                    <li><a data-cityid="360"
+                           title="银川"> 银川 </a></li>
+                    <li><a data-cityid="281"
+                           title="营口"> 营口 </a></li>
+                    <li><a data-cityid="231"
+                           title="榆林"> 榆林 </a></li>
+                    <li><a data-cityid="328"
+                           title="运城市"> 运城市 </a></li>
+                    <li><a data-cityid="264"
+                           title="张家口"> 张家口 </a></li>
+                    <li><a data-cityid="255"
+                           title="漳州"> 漳州 </a></li>
+                    <li><a data-cityid="268"
+                           title="郑州"> 郑州 </a></li>
+                    <li><a data-cityid="187"
+                           title="中山市"> 中山市 </a></li>
+                    <li><a data-cityid="245"
+                           title="舟山"> 舟山 </a></li>
+                    <li><a data-cityid="140"
+                           title="珠海"> 珠海 </a></li>
+                    <li><a data-cityid="222"
+                           title="株洲"> 株洲 </a></li>
+                    <li><a data-cityid="354"
+                           title="淄博"> 淄博 </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <input type="text" class="input" placeholder="请输入您的订餐地址（写字楼、小区或学校等）"><input class="button" type="button"
+                                                                                    value="百度一下">
+    </div>
+</div>
+<div class="inner">
+    <div class="main clearfix">
+        <div class="video">
+            <embed src="http://player.video.qiyi.com/f788fd6d4b9254eea778966a0a60d387/0/117/v_19rrnrqrnw.swf-albumId=364991200-tvId=364991200-isPurchase=0-cnId=20"
+                   wmode="transparent" quality="high" type="application/x-shockwave-flash" allowfullscreen="true"
+                   isloop="1"
+                   widivh="500" height="300"
+                   onmousedown="adivNStat({da_trd:'waimai',da_src:'posterVideoBk.play',da_act:'click'})">
+        </div>
+        <div class="download">
+            <p>下载百度外卖APP</p>
+            <p>尽享品质生活</p>
+            <div class="download-link">
+                <a href="#"><span class="icon-apple"></span> iphone 下载</a>
+                <a href="#"><span class="icon-android"> android 下载</span></a>
+                <div class="download-qr">
+                    <img src="../images/dowmload_qr_07.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="clearfix">
+        <div>
+            <h3>帮助</h3>
+            <ul>
+                <li><a href="#">建议与反馈</a></li>
+                <li><a href="#">使用帮助</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">用户协议</a></li>
+
+            </ul>
+        </div>
+        <div>
+            <h3>关注我们</h3>
+            <ul>
+                <li><a href="#">官方论坛</a></li>
+                <li><a href="#">新浪微博</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">微信公众号</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>商务合作</h3>
+            <ul>
+                <li><a href="#">商户中心</a></li>
+                <li><a href="#">邮箱：414055496@qq.com</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>客服热线</h3>
+            <ul>
+                <li>400-011-777</li>
+                <li>周一至周日9:000-22:00</li>
+            </ul>
+        </div>
+    </footer>
+    <div class="bottom">
+        小度生活（北京）科技有限公司，北京小度信息科技有限公司京ICP备16008577-1号 合作伙伴 :<img src="../images/waimailogo_bottom_11.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>

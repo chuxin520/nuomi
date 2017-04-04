@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>糯米</title>
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/brands.css" rel="stylesheet" type="text/css">
+    <link href="css/hotel.css" rel="stylesheet" type="text/css">
+    <link href="css/movie.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.slideBox.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="lib/html5shiv.js"></script>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="lib/angular-animate.min.js"></script>
+    <script src="lib/jquery-1.12.4.min.js"></script>
+    <script src="js/myApp.js"></script>
+    <script src="js/homeCtrl.js"></script>
+    <script src="js/brandsCtrl.js"></script>
+    <script src="js/hotelCtrl.js"></script>
+    <script src="js/movieCtrl.js"></script>
+    <script src="filters/homeFilters.js"></script>
+    <script src="js/jquery.slideBox.js" type="text/javascript"></script>
+
+</head>
+<body ng-app="myApp">
+<div class="top">
+    <div class="inner">
+        <ul class="city">
+            <li><span class="current_city">杭州</span><span class="line"></span></li>
+            <li class="select_city">
+                <a href="#">切换城市<span class="icon-angle-down"></span></a>
+                <div class="city-drop-down">
+                    <h3>热门城市</h3>
+                    <ul class="clearfix">
+                        <li><a href="#">北京</a></li>
+                        <li><a href="#">上海</a></li>
+                        <li><a href="#">广州</a></li>
+                        <li class="no-right-margin"><a href="#">深圳</a></li>
+                        <li><a href="#">天津</a></li>
+                        <li><a href="#">杭州</a></li>
+                        <li><a href="#">西安</a></li>
+                        <li class="no-right-margin"><a href="#">成都</a></li>
+                        <li><a href="#">郑州</a></li>
+                        <li><a href="#">厦门</a></li>
+                        <li><a href="#">青岛</a></li>
+                        <li class="no-right-margin"><a href="#">太原</a></li>
+                        <li><a href="#">重庆</a></li>
+                        <li><a href="#">武汉</a></li>
+                        <li><a href="#">南京</a></li>
+                        <li class="no-right-margin"><a href="#">沈阳</a></li>
+                        <li><a href="#">济南</a></li>
+                        <li><a href="#">哈尔滨</a></li>
+                    </ul>
+                    <a href="#" class="link morelink">更多城市 &gt;</a>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="top_nav">
+            <li><a href="#">登陆</a><span class="line"></span></li>
+            <li><a href="#">注册</a><span class="line"></span></li>
+            <li style="z-index: 1000">
+                <a href="views/nuomiApp.html">
+                    手机糯米
+                    <span class="icon-angle-down"></span>
+                </a>
+                <span class="line"></span>
+                <div class="qr-drop-down">
+                    <a href="views/nuomiApp.html">
+                    <img src="images/nuomi_qr.png">
+                    </a>
+                </div>
+            </li>
+            <li><a href="#">我的订单</a><span class="line"></span></li>
+            <li>
+                <a href="#">
+                    我的糯米
+                    <span class="icon-angle-down"></span>
+                </a>
+                <span class="line"></span>
+                <div class="myNuomi">
+                    <ul>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">选座订单</a></li>
+                        <li><a href="#">我的收藏</a></li>
+                        <li><a href="#">我的评价</a></li>
+                        <li><a href="#">我的余额</a></li>
+                        <li><a href="#">我的抵用券</a></li>
+                        <li><a href="#">账户设置</a></li>
+                        <li><a href="#">我的百度</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    最近浏览
+                    <span class="icon-angle-down"></span>
+                </a>
+                <span class="line"></span>
+                <div class="history">
+                    <p>暂无浏览记录</p>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    我是商家
+                    <span class="icon-angle-down"></span>
+                </a>
+                <span class="line"></span>
+                <div class="myBusiness">
+                    <ul>
+                        <li><a href="#">商户中心</a></li>
+                        <li><a href="#">我要合作</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">帮助中心</a><span class="line"></span></li>
+            <li>
+                <a href="#">
+                    关注
+                    <span class="icon-angle-down"></span>
+                </a>
+                <span class="line"></span>
+                <div class="webChat-drop-down">
+                    <img src="images/webChatQr.png">
+                    <p>百度糯米:<span>uomivip</span></p>
+                </div>
+            </li>
+            <li><a href="#">收藏</a></li>
+        </ul>
+    </div>
+
+</div>
+<header>
+    <a class="logo" href="#"><img src="images/nuomi_logo.png"></a>
+    <ul>
+        <li class="input-bar">
+
+            <input type="text" placeholder="搜索商家或地点" class="search_input">
+            <div class="search-btn">
+                <input type="button" class="search">
+                <span class="icon-search"></span>
+            </div>
+            <ul>
+                <li><a href="#">肯德基</a></li>
+                <li><a href="#">聚优惠</a></li>
+                <li><a href="#">好伦哥</a></li>
+            </ul>
+        </li>
+        <li class="insurance">
+            <a href="#">
+                <span class="outline"></span>退
+                <p class="insurance_content retreat">
+                    <img src="images/insurance_sanjiao_03.jpg" >
+                    未消费，随便退！
+                </p>
+            </a>|
+            <a href="#">
+                <span  class="outline"></span>赔
+                <p class="insurance_content compensate">
+                    <img src="images/insurance_sanjiao_03.jpg" >
+                    消费不满意先行赔付！
+                </p>
+            </a>|
+            <a href="#">
+                <span  class="outline yen"> </span><span class="icon-yen"></span>
+                <p class="insurance_content overdue">
+                    <img src="images/insurance_sanjiao_03.jpg" >
+                    过期自动退!
+                </p>
+            </a>
+        </li>
+    </ul>
+</header>
+<div class="main">
+    <ng-view></ng-view>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+.brands-all .icon-angle-down{
+    float: right;
+    font-size: 26px;
+    margin-top: 8px;
+    margin-right: -17px;
+}
+.brands-all-items{
+    display: none;
+}
+.brands-all:hover  .brands-all-items{
+    display: block;
+}
+.brands-all:hover  .icon-angle-down{
+    display: inline-block;
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); 	/* IE 9 */
+    -moz-transform:rotate(180deg); 	/* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg); 	/* Opera */
+}
+.brands-banner{
+    padding: 10px 0 0;
+    border-bottom: 1px solid #ccc;
+    background:url(../images/brands-bann_03.jpg) no-repeat center top;
+}
+.brands-banner-text {
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 376px;
+    color: #fffae1;
+    font-family: "Microsoft Yahei";
+}
+.timer-box{
+    height: 246px;
+    padding-top: 40px;
+    position: relative;
+}
+.brands-wrapper {
+    width: 980px;
+    margin: auto;
+    position: relative;
+}
+.rest-timer{
+    position: absolute;
+    left: 203px;
+    bottom: 43px;
+    font-family: Arial,Tahoma,songti,Verdana,STHeiTi,sans-serif;
+    font-size: 54px;
+    color: white;
+}
+.timetext{
+    font-size: 30px;
+}
+.t{
+    margin: 0 20px;
+}
+.brands-item-bottom-line{
+    position: absolute;
+    bottom: 23px;
+    height: 1px;
+    width: 100%;
+    background-color: #9e9e9e;
+}
+.brands-item-outline{
+    width: 100%;
+    position: absolute;
+    border: 1px transparent solid;
+    z-index: 10;
+    bottom: 23px;
+}
+.item:hover .brands-item-outline {
+    border: 1px #ff4883 solid;
+}
+
+.choices{
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #DFDFDF;
+    width: 1195px;
+    margin: 0 auto;
+    line-height: 43px;
+    font-size: 12px;
+    padding-left: 15px;
+    vertical-align: top;
+}
+#brands-m-b .m-b-title {
+    width: 1208px;
+}
+#brands-m-b>ul {
+    width: 1188px;
+}

@@ -1,0 +1,133 @@
+.choose-bar{
+    height: 61px;
+    padding-right: 20px;
+}
+.hotel-city,.hotel-location{
+    display: inline-block;
+    position: relative;
+    margin-right: 30px;
+    padding-top: 20px;
+    padding-left: 30px;
+    float: left;
+}
+.hotel-city label,.hotel-location label{
+    vertical-align: middle;
+}
+.showHotel{
+    position: absolute;
+    right: 7px;
+    top: 31px;
+}
+.hotel-city input,.hotel-location input{
+    width: 130px;
+    height: 30px;
+    border: 1px #cccccc solid;
+    padding-left: 8px;
+}
+.hotel-hot-city{
+    float: right;
+    vertical-align: bottom;
+    padding-top: 20px;
+}
+.hotel-hot-city ul{
+    float: right;
+    padding-top: 3px;
+}
+.hotel-hot-city ul li{
+    float: left;
+    padding-right: 17px;
+    font-size: 13px;
+}
+.hotel-hot-city ul li a{
+    color: #ff5e89;
+}
+.hotel-options{
+    padding: 0 30px;
+    font-size: 13px;
+    border: 1px #cccccc solid;
+}
+.hotel-type{
+    border-bottom: 1px #cccccc solid;
+
+}
+.hotel-option-header{
+    float: left;
+    padding-top: 15px;
+}
+
+.hotel-area ul,.hotel-price ul,.hotel-type ul{
+    padding: 10px 0;
+    float: left;
+    width: 1000px;
+}
+.hotel-area>ul{
+    height: 105px;
+}
+.hotel-area ul a,.hotel-price ul li a,.hotel-type ul li a{
+    color: #666666;
+}
+.hotel-area li,.hotel-price ul li ,.hotel-type ul li{
+    float: left;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+}
+.hotel-option-header span{
+    color: #666666;
+}
+.hotel-option-header a{
+    display: inline-block;
+    margin: 0 22px;
+}
+.chosen{
+    background-color: #ff5e89;
+    color: white;
+}
+
+.hotel-area .subway-detail,.hotel-area .xingZheng-detail{
+    background-color: #fbfbfb;
+    border: 1px solid #f3f3f3;
+    padding-left: 22px;
+    width: 1043px;
+    margin: 10px 0 0 -22px;
+}
+.hotel-area .xingZheng-detail{
+    margin: 10px 0 0 -122px;
+}
+.xingZheng,.subway{
+    position: relative;
+}
+
+.subway .hotel-sanjiao,.xingZheng .xingZheng-sanjiao{
+    position: absolute;
+    left: 20px;
+    top:28px;
+}
+.hotel-options a:hover{
+    color:#005aa0;
+}
+.hotel-options-bottom{
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #dddddd;
+    border-top: none;
+    padding-left: 15px;
+    font-size: 13px;
+    background-color: #fbfbfb;
+}
+.hotel-options-bottom span{
+    color: #ff5e89;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

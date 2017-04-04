@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lib/jquery-1.12.4.min.js"></script>
+    <style>
+        div.box {
+            width: 300px;
+            padding: 20px;
+            margin: 20px;
+            border: 4px dashed #ccc;
+        }
+
+        div.box > span {
+            color: #999;
+            font-style: italic;
+        }
+
+        div.content {
+            width: 250px;
+            margin: 10px 0;
+            padding: 20px;
+            border: 2px solid #ff6666;
+        }
+
+        input[type='text'] {
+            width: 45px;
+            height: 35px;
+            padding: 5px 10px;
+            margin: 5px 0;
+            border: 1px solid #ff9966;
+        }
+    </style>
+    <script>
+        $(function () {
+            show_time();
+        });
+
+        function show_time() {
+            var time_start = new Date().getTime(); //设定当前时间
+            var time_end = new Date("2016/10/01 00:00:00").getTime(); //设定目标时间
+// 计算时间差
+            var time_distance = time_end - time_start;
+// 天
+            var int_day = Math.floor(time_distance / 86400000)
+            time_distance -= int_day * 86400000;
+// 时
+            var int_hour = Math.floor(time_distance / 3600000)
+            time_distance -= int_hour * 3600000;
+// 分
+            var int_minute = Math.floor(time_distance / 60000)
+            time_distance -= int_minute * 60000;
+// 秒
+            var int_second = Math.floor(time_distance / 1000)
+// 时分秒为单数时、前面加零
+            if (int_day < 10) {
+                int_day = "0" + int_day;
+            }
+            if (int_hour < 10) {
+                int_hour = "0" + int_hour;
+            }
+            if (int_minute < 10) {
+                int_minute = "0" + int_minute;
+            }
+            if (int_second < 10) {
+                int_second = "0" + int_second;
+            }
+// 显示时间
+            $("#time_d").val(int_day);
+            $("#time_h").val(int_hour);
+            $("#time_m").val(int_minute);
+            $("#time_s").val(int_second);
+// 设置定时器
+            setTimeout("show_time()", 1000);
+        }
+    </script>
+</head>
+<body>
+<div class="box">
+    <span>距离2015年国庆节还剩：</span><br>
+    <div class="content">
+        <input type="text" id="time_d">天<input type="text" id="time_h">时<input type="text" id="time_m">分<input
+            type="text" id="time_s">秒
+    </div>
+</div>
+</body>
+</html>
+
+<embed src="http://player.video.qiyi.com/f788fd6d4b9254eea778966a0a60d387/0/117/v_19rrnrqrnw.swf-albumId=364991200-tvId=364991200-isPurchase=0-cnId=20"
+       wmode="transparent" quality="high" type="application/x-shockwave-flash" allowfullscreen="true" isloop="1"
+       width="500" height="300" onmousedown="addNStat({da_trd:'waimai',da_src:'posterVideoBk.play',da_act:'click'})">

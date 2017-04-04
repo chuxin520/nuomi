@@ -1,0 +1,137 @@
+.movie-inner {
+    width: 965px;
+    margin: 0 auto;
+}
+
+.movie-nav {
+    height: 48px;
+    line-height: 48px;
+}
+
+.movie-nav ul {
+    padding-left: 115px;
+    float: left;
+}
+
+.movie-nav ul li {
+    float: left;
+    height: 48px;
+}
+
+.movie-nav ul li a {
+    padding: 0 20px;
+    color: #333333;
+    border-right: 1px #cccccc solid;
+    font-size: 13px;
+}
+
+.movie-nav ul li a:hover {
+    color: #ff318c;
+}
+
+.movie-nav .movie-nav-active a {
+    color: #ff318c;
+}
+
+.movie-nav .movie-nav-active {
+    background-image: url("../images/movie-nav_03.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.banner-section {
+    padding-top: 15px;
+    height: 485px;
+    background: #f5f5f5;
+    border-top: 1px #cccccc solid;
+}
+
+.move-items img {
+    height: 200px;
+    width: 154px;
+}
+.move-items li{
+    margin-left: 19px;
+}
+#demo2 .tips{
+    height: 30px;
+}
+#demo2 .nums{
+    right: 10px;
+}
+#demo2 .nums a{
+    height: 10px;
+    width: 10px;
+}
+#demo3{
+    left: 480px;
+}
+#demo3 .nums{
+    width: 960px;
+    top:-160px;
+    left:270px;
+    z-index: 2;
+}
+#demo3 .nums a{
+    display: none;
+}
+#demo3 .nums a:nth-child(4n){
+    display: inline-block;
+}
+#demo3 li{
+    position: relative;
+    border: 1px #f5f5f5 solid;
+    /*border-bottom: none;*/
+}
+#demo3 li:hover{
+   border-color: #ff318c;
+}
+#demo3 li:hover .li-bot{
+    border-color: #ff318c;
+}
+#demo3 .li-bot{
+    position: absolute;
+    top: 200px;
+    background: white;
+    left: -1px;
+    width: 154px;
+    border: 1px #f5f5f5 solid;
+    border-top: none;
+    height: 130px;
+    z-index: 1;
+    text-align: center;
+}
+#demo3 .tips{
+    z-index: 2;
+}
+.slide-window2{
+    height: 332px;
+}
+.li-bot p{
+    margin-top: 16px;
+}
+#demo3 .li-bot img{
+    width: 103px;
+    height: 45px;
+}
+.li-bot input{
+    width: 120px;
+    height: 30px;
+    background: #fe8a4b;
+    color: white;
+}
+.li-bot input:hover{
+    background: #FEDA09;
+}
+.now,.later{
+    padding: 5px;
+    font-weight: normal;
+}
+.now{
+    color: white;
+    background: #ff318c;
+}
+.later:hover{
+    color: white;
+    background: #ff318c;
+}
